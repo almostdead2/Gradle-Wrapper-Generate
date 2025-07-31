@@ -18,6 +18,11 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    - name: Create minimal Gradle build
+      run: |
+        echo "rootProject.name = 'gradle-wrapper-gen'" > settings.gradle
+        echo "// empty build file" > build.gradle
+
     - name: Install Gradle temporarily
       uses: gradle/actions/setup-gradle@v3
 
