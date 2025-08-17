@@ -26,8 +26,8 @@ jobs:
     - name: Install Gradle temporarily
       uses: gradle/actions/setup-gradle@v3
 
-    - name: Generate Gradle Wrapper (v8.7)
-      run: gradle wrapper --gradle-version 8.7
+    - name: Generate Gradle Wrapper (v7.4.2)
+      run: gradle wrapper --gradle-version 7.4.2
 
     - name: Upload Wrapper Files as Artifact
       uses: actions/upload-artifact@v4
